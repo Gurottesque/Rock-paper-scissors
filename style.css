@@ -143,11 +143,11 @@ body {
 }
 
 #first-player-buttons {
+    justify-content: space-between;
     display: flex;
     gap: 50px;
-    padding: 5%;
+    padding: 1%;
 }
-
 #second-player-buttons {
     justify-content: space-between;
     display: flex;
@@ -165,53 +165,60 @@ body {
     transform: scaleX(-1);
 }
 
-/* 
-#player1-points {
-    font-family: 'Arial', sans-serif;
-    font-size: 2.0em;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 10px 20px;
-    top: 40px;
-    position: absolute;
-
-} */
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
     .header-image {
         min-width: 300px;
         width: 40vw;
         padding: 1%;
     }
+
+    #first-player-buttons {
+        display: block;
+        gap: 50px;
+        padding: 5%;
+    }
+
+    #second-player-buttons{
+        display: block;
+        gap: 50px;
+        padding: 5%;
+                
+        }
+
+    .points{
+        display: flex;
+        flex-direction: column;
+    }
+    }
 }
 
-.points {
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    gap: 8%;
-}
 
-#status-text {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
+    .points {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        gap: 8%;
+    }
 
-#win-message {
-    font-size: 30%;
-    display: flex;
-    align-items: center;
-}
+    #status-text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
 
-#reset {
-    border-radius: 50%;
-    font-family: 'Arial', sans-serif;
-    font-size: 60%;
-    font-weight: bold;
-    padding: 10px 20px;
-    cursor: pointer;
-    top: 10%;
-}
+    #win-message {
+        font-size: 30%;
+        display: flex;
+        align-items: center;
+    }
+
+    #reset {
+        border-radius: 50%;
+        font-family: 'Arial', sans-serif;
+        font-size: 60%;
+        font-weight: bold;
+        padding: 10px 20px;
+        cursor: pointer;
+        top: 10%;
+    }
